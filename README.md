@@ -1,7 +1,7 @@
 graylog2-vagrant
 ================
 
-Graylog2 0.20.1 Vagrant Box for easy testing
+Graylog2 0.20.2 Vagrant Box for easy testing
 
  * git clone --recursive https://github.com/hggh/graylog2-vagrant.git
  * cd graylog2-vagrant
