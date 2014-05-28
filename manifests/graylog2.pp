@@ -66,7 +66,7 @@ class { 'elasticsearch':
 }
 
 class { 'graylog2':
-  web_graylog2_server_address => "http://127.0.0.1:12900/",
+  web_graylog2_server_address => "http://${::ipaddress}:12900/",
   web_timezone                => "Europe/Berlin",
   web_secret                  => "G3n133XvTHhvhkEWNMLUgKk0BaYAcpN85eJggjsCr5yyViwuq7y2Bs6U88xHmfG33e5r3IjE38padqS3S49QMRZ8pzZgndfL",
   password_secret             => "kuY4TrWvjYeh3yqrUPXvgtN2fk9ErquTuQFtqiswYF8OhPYoQbNkjQXJuXSXuMzGpUz97v2gl9tImrFnpQZG670cBf0QOlLG",
@@ -74,7 +74,7 @@ class { 'graylog2':
   require                     => [ Class['mongodb'], Class['elasticsearch'] ],
 }
 
-package { [ "ruby-gelf", "curl"]:
+package { [ "ruby-gelf", "curl", "moreutils" ]:
   ensure => latest,
 }
 
