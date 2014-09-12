@@ -10,3 +10,6 @@
 [submodule "modules/elasticsearch"]
 	path = modules/elasticsearch
 	url = https://github.com/elasticsearch/puppet-elasticsearch.git
+[submodule "modules/apache"]
+	path = modules/apache
+	url = https://github.com/puppetlabs/puppetlabs-apache.git
