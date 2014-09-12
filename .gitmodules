@@ -16,3 +16,6 @@
 [submodule "modules/graylog2"]
 	path = modules/graylog2
 	url = https://github.com/Graylog2/graylog2-puppet.git
+[submodule "modules/concat"]
+	path = modules/concat
+	url = https://github.com/puppetlabs/puppetlabs-concat.git
