@@ -1,4 +1,0 @@
-# Change to yes, to enable Graylog2 Webinterface on boot
-RUN=yes
-HTTP_ADDRESS="<%= @graylog2_web_http_address -%>"
-HTTP_PORT="<%= @graylog2_web_http_port -%>"
