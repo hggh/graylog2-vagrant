@@ -13,3 +13,6 @@
 [submodule "modules/apache"]
 	path = modules/apache
 	url = https://github.com/puppetlabs/puppetlabs-apache.git
+[submodule "modules/graylog2"]
+	path = modules/graylog2
+	url = https://github.com/Graylog2/graylog2-puppet.git
