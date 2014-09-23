@@ -40,7 +40,7 @@ class { 'elasticsearch':
   require     => Package['openjdk-7-jre-headless'],
 } ->
 class {'graylog2::repo':
-  version => '0.21',
+  version => '0.90',
 } ->
 class {'graylog2::server':
   password_secret    => 'kuY4TrWvjYeh3yqrUPXvgtN2fk9ErquTuQFtqiswYF8OhPYoQbNkjQXJuXSXuMzGpUz97v2gl9tImrFnpQZG670cBf0QOlLG',
@@ -54,6 +54,8 @@ class {'graylog2::server':
 class {'graylog2::web':
   application_secret   => 'G3n133XvTHhvhkEWNMLUgKk0BaYAcpN85eJggjsCr5yyViwuq7y2Bs6U88xHmfG33e5r3IjE38padqS3S49QMRZ8pzZgndfL',
   graylog2_server_uris => [ "http://${::ipaddress}:12900/" ],
+} ->
+class {'graylog2::dashboard':
 } ->
 file { '/usr/local/bin/create_graylog2_inputs_gelf':
   ensure => present,
