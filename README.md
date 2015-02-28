@@ -1,3 +1,6 @@
+
+This project is no longer maintained, please use official images: https://www.graylog.org/download-graylog/
+
 graylog2-vagrant
 ================
 
